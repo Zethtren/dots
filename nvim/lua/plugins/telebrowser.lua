@@ -8,6 +8,7 @@ return {
     config = function()
       require("telescope").load_extension("file_browser")
       require("telescope").load_extension("fzf")
+      require("telescope").load_extension("zoxide")
     end,
     opts = {
       extensions = {
@@ -22,10 +23,12 @@ return {
             },
           },
         },
+        zoxide = {},
       },
     },
     keys = {
       { "<c-/>", "<cmd>Telescope file_browser theme=ivy<cr>", remap = true },
+      { "<c-z>", "<cmd>Telescope zoxide list<CR>", remap = true },
     },
   },
   {
@@ -34,5 +37,9 @@ return {
   },
   {
     "nvim-telescope/telescope-fzf-native.nvim",
+  },
+  {
+    "jvgrootveld/telescope-zoxide",
+    dependencies = { "nvim-telescope/telescope.nvim" },
   },
 }
