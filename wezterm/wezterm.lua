@@ -8,9 +8,10 @@ if wezterm.config_builder then
 end
 
 -- Theme
-config.color_scheme = "Catppuccin Mocha"
+config.color_scheme = "tokyonight_night"
 
 -- Font
+-- Defaults to Roboto Cursive without
 config.font_rules = {
 	-- Bold-and-italic
 	{
@@ -48,42 +49,10 @@ config.use_fancy_tab_bar = true
 config.show_tabs_in_tab_bar = true
 config.tab_bar_at_bottom = true
 config.window_frame = {
-	-- The font used in the tab bar.
-	-- Roboto Bold is the default; this font is bundled
-	-- with wezterm.
-	-- Whatever font is selected here, it will have the
-	-- main font setting appended to it to pick up any
-	-- fallback fonts you may have used there.
+
 	font = wezterm.font({ family = "DankMono", weight = "Bold" }),
 
-	-- The size of the font in the tab bar.
-	-- Default to 10. on Windows but 12.0 on other systems
 	font_size = 20.0,
-
-	-- The overall background color of the tab bar when
-	-- the window is focused
-	active_titlebar_bg = "#1e1e2e",
-
-	-- The overall background color of the tab bar when
-	-- the window is not focused
-	inactive_titlebar_bg = "#1e1e2e",
-	active_tab = {
-		bg_color = "11111b",
-		fg_color = "cdd6f4",
-		italic = true,
-	},
-	inactive_tab = {
-		bg_color = "1e1e2e",
-		fg_color = "cdd6f4",
-		italic = true,
-	},
-}
-config.colors = {
-	active_tab = {
-		bg_color = "11111b",
-		fg_color = "cdd6f4",
-		italic = true,
-	},
 }
 
 -- Keys
@@ -188,6 +157,11 @@ config.keys = {
 		key = "v",
 		mods = "SUPER",
 		action = act.PasteFrom("Clipboard"),
+	},
+	{
+		key = "c",
+		mods = "SUPER",
+		action = act.CopyTo("Clipboard"),
 	},
 }
 

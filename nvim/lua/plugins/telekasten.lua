@@ -3,7 +3,7 @@ return {
     "renerocksai/telekasten.nvim",
     dependencies = { "nvim-telescope/telescope.nvim" },
     opts = {
-      home = vim.fn.expand("~/zettel"),
+      home = vim.fn.expand("~/srv/notes"),
     },
     keys = {
       -- Launch panel if nothing is typed after <leader>z

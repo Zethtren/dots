@@ -53,6 +53,10 @@
     auto_derive_workspaces: true,
     keybind: [
         (command: Execute, value: "dmenu_run", modifier: ["Control", "Shift", "Mod1"], key: "d"),
+        (command: Execute, value: "alacritty -e gobang", modifier: ["Control", "Shift", "Mod1"], key: "g"),
+        (command: Execute, value: "roam", modifier: ["Control", "Shift", "Mod1"], key: "c"),
+        (command: Execute, value: "firefox", modifier: ["Control", "Shift", "Mod1"], key: "f"),
+        (command: Execute, value: "vivaldi-stable", modifier: ["Control", "Shift", "Mod1"], key: "v"),
         (command: Execute, value: "wezterm", modifier: ["Control", "Shift", "Mod1"], key: "Return"),
         (command: CloseWindow, value: "", modifier: ["Control", "Shift", "Mod1", "Mod4"], key: "q"),
         (command: SoftReload, value: "", modifier: ["Control", "Shift", "Mod1", "Mod4"], key: "r"),
