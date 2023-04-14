@@ -62,4 +62,5 @@ let-env NU_PLUGIN_DIRS = [
 # let-env PATH = ($env.PATH | split row (char esep) | prepend '/some/path')
 let-env PATH = ($env.PATH | split row (char esep) | prepend '/home/hbova/google-cloud-sdk/bin')
 let-env PATH = ($env.PATH | split row (char esep) | prepend '/home/hbova/.local/bin')
+let-env PATH = ($env.PATH | split row (char esep) | prepend '/home/hbova/HelperFuncs')
 

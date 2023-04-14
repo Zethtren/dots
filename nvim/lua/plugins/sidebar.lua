@@ -8,8 +8,9 @@ return {
         "git-status",
         "lsp-diagnostics",
         "containers",
-        -- require("dap-sidebar-nvim.breakpoints"),
       },
+      side = "right",
+      initial_width = 35,
     },
   },
 }
